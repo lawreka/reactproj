@@ -43,25 +43,37 @@ var QuestionList = React.createClass({
 var Question = React.createClass({
   getInitialState: function() {
     return {
+      opacity: 1.0
     };
   },
   onSelectOne: function(e) {
     result1 = result1 + 1
+    this.setState({
+      opacity: 0.5
+    });
   },
   onSelectTwo: function(e) {
     result2 = result2 + 1
+    this.setState({
+      opacity: 0.5
+    });
   },
   onSelectThree: function(e) {
     result3 = result3 + 1
+    this.setState({
+      opacity: 0.5
+    });
   },
   render: function() {
     return (
-      <div className="questiontext" >
+      <div className="questiontext" style={{opacity:this.state.opacity}}>
         <div className="questionid">
           Question # {this.props.number}
         </div>
+        <div className="questionask">
         {this.props.text}
-        <form>
+        </div>
+        <form className="questionstyle">
           <input type="radio" name="question" onChange={this.onSelectOne}/>{this.props.value1}
           <input type="radio" name="question" onChange={this.onSelectTwo}/>{this.props.value2}
           <input type="radio" name="question" onChange={this.onSelectThree}/>{this.props.value3}
@@ -99,8 +111,8 @@ var Result = React.createClass({
   },
   render: function() {
     return (
-      <div>
-        <input type="button" value="Get Result" onClick={this.handleClick} />
+      <div id="results">
+        <input type="button" id="resultbutton" value="Get Result" onClick={this.handleClick} />
         <div id="finalanswer" style={{opacity:this.state.opacity}}>
           This is the result: {this.resultPicker.winner} {winner}
         </div>

@@ -1,0 +1,35 @@
+body{
+  margin: 0;
+  color: red;
+}
+#quiztitle{
+  font-size: 72px;
+}
+#quizdescription{
+  font-size: 36px;
+}
+.questionList{
+  background-color: grey;
+}
+.questiontext{
+  color: green;
+  padding-top: 2%;
+}
+.questionid{
+  color: orange;
+}
+.questionask{
+  color: white;
+}
+.questionstyle{
+  color: yellow;
+}
+#results{
+}
+#resultbutton{
+  background-color: blue;
+  margin-top: 10%;
+}
+#finalanswer{
+  color: black;
+}
