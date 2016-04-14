@@ -1,34 +1,84 @@
 body{
-  margin: 0;
-  color: red;
-}
-#quiztitle{
-  font-size: 72px;
-}
-#quizdescription{
-  font-size: 36px;
+  margin: 1%;
+  color: black;
+  font-family: 'Arial', sans-serif;
 }
 .questionList{
-  background-color: grey;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.questiontext{
-  color: green;
-  padding-top: 2%;
+#quiztitle{
+  font-size: 45px;
+  font-weight: bold;
+}
+#quizdescription{
+  font-size: 30px;
 }
 .questionid{
-  color: orange;
+  font-size: 30px;
+  font-weight: bold;
+}
+.questiontext{
+  padding-top: 2%;
 }
 .questionask{
-  color: white;
+  padding-top: 1%;
+  font-size: 20px;
 }
-.questionstyle{
-  color: yellow;
+.questionimg{
+  width: 200px;
+  height: 200px;
+  display:inline;
+}
+.check{
+  text-align: center;
+}
+.questionbox{
+  max-width: 30%;
+  height: auto;
+  display: inline-block;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  padding: 10px;
+  margin: 10px;
+}
+.questionimg{
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+}
+.imgsource{
+  color: grey;
+  font-size: 12px;
+}
+.caption{
+  font-size: 24px;
+  text-align: center;
+}
+.resultimg{
+  max-height: 300px;
+  max-width: 300px;
 }
 #results{
+  text-align: center;
 }
 #resultbutton{
-  background-color: blue;
-  margin-top: 10%;
+    text-align: center;
+    cursor: default;
+    color: black;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    border: none;
+    font-size: 36px;
+    margin-top: 5%;
+}
+h3{
+  font-size: 28px;
 }
 #finalanswer{
   color: black;
